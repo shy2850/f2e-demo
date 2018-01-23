@@ -1,7 +1,7 @@
 {
-  "name": "texas",
+  "name": "f2e-demo",
   "version": "1.0.0",
-  "description": "Texas",
+  "description": "f2e-server demo",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc -p ./tsconfig.serve.json",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shy2850/Texas.git"
+    "url": "git+https://github.com/shy2850/f2e-demo.git"
   },
   "author": "shy2850",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shy2850/Texas/issues"
+    "url": "https://github.com/shy2850/f2e-demo/issues"
   },
-  "homepage": "https://github.com/shy2850/Texas#readme",
+  "homepage": "https://github.com/shy2850/f2e-demo#readme",
   "dependencies": {
     "bulma": "^0.6.2",
     "f2e-middle-typescript": "^0.3.3",
