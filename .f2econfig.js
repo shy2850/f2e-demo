@@ -12,6 +12,9 @@ module.exports = {
             middleware: 'template',
             test: /index\.html?/
         },
+        {
+            middleware: 'typescript'
+        },
         middle
     ],
     output: require('path').join(__dirname, '../f2e-output')

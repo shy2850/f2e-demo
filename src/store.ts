@@ -9,16 +9,6 @@ export const init = (state = {}) => {
 }
 export const getState = () => store
 
-export const compose = (...funcs) => {
-    if (funcs.length === 0) {
-        return arg => arg
-    } else {
-        const last = funcs[funcs.length - 1]
-        const rest = funcs.slice(0, -1)
-        return (...args) => rest.reduceRight((composed, f) => f(composed), last(...args))
-    }
-}
-
 export const dispatch = function dispatch(action) {
     let res = action(store)
     if (res !== store) {
@@ -38,7 +28,7 @@ export const isSameObject = (obj1, obj2) => {
     return !keys1.find(k => obj1[k] !== obj2[k])
 }
 
-export const connect = (mapProps = EF, mapDispatch = EF) => (Component) => class extends React.Component {
+export const connect = (mapProps = EF, mapDispatch?:Function) => (Component) => class extends React.Component {
     props
     tempProps
     tempUpdate
@@ -46,7 +36,10 @@ export const connect = (mapProps = EF, mapDispatch = EF) => (Component) => class
     execProps() {
         const { props } = this
         const res1 = mapProps(getState, props)
-        const res2 = mapDispatch(dispatch, res1)
+        let res2 = {}
+        if (mapDispatch) {
+            res2 = mapDispatch(dispatch, { ...props, ...res1})
+        }
         return { ...props, ...res1, ...res2 }
     }
     constructor(props) {

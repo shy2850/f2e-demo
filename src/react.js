@@ -1,1 +1,1 @@
-$include['../node_modules/react/cjs/react.development.js', '../node_modules/react/cjs/react.production.min.js']
+$include['../node_modules/react/umd/react.development.js']['../node_modules/react/umd/react.production.min.js']
