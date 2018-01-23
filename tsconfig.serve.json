@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "target": "esnext"
+    },
+    "include": [
+        "serve/*.ts",
+        "serve/**/*.ts"
+    ]
+}
