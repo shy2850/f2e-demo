@@ -1,6 +1,6 @@
 const { argv } = process
 const build = argv[argv.length - 1] === 'build'
-const middle = require('./dist').default
+const middle = require('./dist/serve').default
 
 const getModuleId = pathname => pathname.replace('src/', '')
 module.exports = {
