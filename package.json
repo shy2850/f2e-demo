@@ -6,6 +6,7 @@
   "scripts": {
     "tsc": "tsc -p ./tsconfig.serve.json",
     "start": "npm run tsc && f2e start",
+    "build": "f2e build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +23,7 @@
     "bulma": "^0.6.2",
     "f2e-middle-typescript": "^0.3.3",
     "f2e-serve": "^0.1.0",
-    "f2e-server": "^2.7.7",
+    "f2e-server": "^2.8.0",
     "immutable": "^3.8.2",
     "less": "^2.7.3",
     "react": "^16.2.0",
