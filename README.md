@@ -22,7 +22,7 @@ npm start
 ```
 
 ## f2e-server utils
-f2e-server 常用功能
+f2e-server 常用功能
 1. 通过 `$include[filePath]` 引入文本资源，所有第三方库都是通过这个方式引入
     - 如 `$include[immutable.js]` 同目录存在 `.min`文件，build模式下自动加载 `.min`文件
     - 不存在时可以使用 `$include[react.development.js][react.production.min.js]` 表示 
@@ -43,4 +43,4 @@ f2e-server 常用功能
 
 
 ## END
-> 正则是需要的
+> 正则是需要的
