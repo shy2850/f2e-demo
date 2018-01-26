@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "moduleResolution": "node",
         "experimentalDecorators": true,
         "module": "amd",
         "jsx": "react",
@@ -8,7 +9,9 @@
     "include": [
         "*.ts",
         "src/*.ts",
+        "serve/*.ts",
         "src/**/*.ts",
+        "serve/**/*.ts",
         "src/*.tsx",
         "src/**/*.tsx"
     ]
